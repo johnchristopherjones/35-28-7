@@ -33,14 +33,23 @@
                 align-items: center;
                 justify-content: flex-end;
                 z-index: 10;
+                bottom: 0px;
             }
-            #footer {
-                display: block;
+            footer {
                 position: absolute;
                 top: 100%;
                 width: 100%;
-                background: black;
-                text-align: center;
+                height: 100px;
+                display: flex;
+                justify-content: space-between;
+                flex-flow: row;
+                align-items: center;
+                background-image: url("img/Hollow7752Construction.gif"),
+                                  url("img/Hollow7752Construction.gif");
+                background-repeat: repeat-x, repeat-x;
+                background-position: top, bottom;
+                padding-top: 20px;
+                padding-bottom: 20px;
             }
             .i0 {background-image: url("img/0.jpg");}
             .i1 {background-image: url("img/1.jpg");}
@@ -71,6 +80,24 @@
                 line-height: 2em;
             }
             .a a {color: inherit; }
+            .netscape {
+                width: 180px;
+                text-align: left;
+                font: 13px/13px serif;
+                overflow: hidden;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                border: outset 2px #aaa;
+                background-color: #aaa;
+                color: black;
+            }
+            .netscape img {
+                height: 30px;
+                width: 30px;
+                display: block;
+                margin-right: 5px;
+            }
         </style>
     </head>
     <body>
@@ -79,7 +106,7 @@
                 Put your books in the locker.
             </h1>
         </div>
-        <div id="bottom">
+        <div>
             <p>
                 “I kinda like the idea of your books in my locker.”
             </p>
@@ -90,7 +117,7 @@
                 But, moving in together, that's an awfully big step, isn't it?”
             </p>
         </div>
-        <div id="footer">
+        <div id="bottom">
             <p class="a">
                 Beverly Hills 90210,
                 <a href="http://www.imdb.com/title/tt0522986/">S2E15</a>,
@@ -101,10 +128,19 @@
                 (You should totally check out Wil Wheaton and Mikey Neumann's
                 <a href="http://tvcrimes.net">tvcrimes.net</a>.)
             </p>
-            <a href="https://www.eff.org/pages/blue-ribbon-campaign">
-                <img src="img/br.gif" alt="Blue Ribbon">
-            </a>
         </div>
+        <footer>
+            <p class="blue-ribbon">
+                <a href="https://www.eff.org/pages/blue-ribbon-campaign">
+                    <img src="img/br.gif" alt="Blue Ribbon">
+                </a>
+            </p>
+            <img src="http://www.textfiles.com/underconstruction/HeHeartlandAcres7021Graphicsconstruction.gif">
+            <div class="netscape">
+                <img src="img/Netscape 2.0 logo-b.svg" alt="Classic Netscape Icon in SVG">
+                <div>Best viewed in<br>Netscape Navigator 2.0</div>
+            </div>
+        </footer>
         <object data="https://www.youtube.com/embed/iY-IFU9LFkY?rel=0&autoplay=1">
             Theme song to “Beverly Hills 90210”
         </object>
