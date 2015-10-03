@@ -6,7 +6,7 @@
         <meta name="description" content="Put your books in my locker">
         <meta name="author" content="U4EA">
         <style>
-            html,body{margin:0;padding:0;}
+            html,body{margin:0;padding:0; background: black;}
             body {
                 height: 100%;
                 font: 18px/36px cursive;
@@ -25,6 +25,15 @@
                 background-repeat: no-repeat;
                 transition: background-image 0.2s ease-in-out;
             }
+            #bottom {
+                position: absolute;
+                width: 100%; height: 100%;
+                display: flex;
+                flex-flow: column;
+                align-items: center;
+                justify-content: flex-end;
+                z-index: 10;
+            }
             #footer {
                 display: block;
                 position: absolute;
@@ -32,8 +41,6 @@
                 width: 100%;
                 background: black;
                 text-align: center;
-
-                /*height: 80px; position: absolute; bottom: 0; text-align: center;*/
             }
             .i0 {background-image: url("img/0.jpg");}
             .i1 {background-image: url("img/1.jpg");}
@@ -71,7 +78,9 @@
             <h1>
                 Put your books in the locker.
             </h1>
-            <!-- <p>
+        </div>
+        <div id="bottom">
+            <p>
                 “I kinda like the idea of your books in my locker.”
             </p>
             <p>
@@ -79,7 +88,7 @@
             </p>
             <p>
                 But, moving in together, that's an awfully big step, isn't it?”
-            </p> -->
+            </p>
         </div>
         <div id="footer">
             <p class="a">
