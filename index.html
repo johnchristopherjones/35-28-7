@@ -33,16 +33,24 @@
             h1 {
                 margin: 48px 0;
                 font-size: 48px;
+                line-height: 48px;
                 text-shadow: 2px 2px 5px black;
-                color: rgba(255, 255, 255, 0.75);
+                color: rgba(255, 255, 255, 0.618);
+                min-height: 1em;
+                text-align: center;
             }
             p {
                 text-shadow: 2px 2px 5px black;
                 font-style: oblique;
                 font-family: sans-serif;
-                color: rgba(255, 255, 255, 0.5);
+                color: rgba(255, 255, 255, 0.618);
                 margin: 0;
+                min-height: 2em;
             }
+            .a {
+                margin: 2em 0;
+            }
+            .a a {color: inherit; font-size: 61.8%;}
         </style>
     </head>
     <body>
@@ -59,12 +67,14 @@
             <p>
                 But, moving in together, that's an awfully big step, isn't it?”
             </p>
+            <p class="a"><a href="https://www.youtube.com/watch?v=U3AOH8HLFLw"><abbr title="Unreal 4, Electronic Arts">U4EA</abbr></a></p>
         </div>
-    <script>function r() {
-        document.querySelector("div").setAttribute('class', 'i' + Math.floor(Math.random() * 5))
-        setTimeout(r, Math.random() * 100000);
-    }
-    r();
-    </script>
+        <script>function r() {
+            document.querySelector("div").setAttribute('class', 'i' + Math.floor(Math.random() * 5))
+            setTimeout(r, Math.random() * 100000);
+        }
+        r();
+        </script>
+
     </body>
 </html>
